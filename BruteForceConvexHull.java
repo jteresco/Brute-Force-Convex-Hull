@@ -13,9 +13,7 @@
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Scanner;
 
 class Point {
@@ -176,7 +174,6 @@ public class BruteForceConvexHull {
                 // same side -- stop as soon as we find they're not
                 int lookingFor = 0; // UNKNOWN from the HDX AV
                 boolean eliminated = false;
-                boolean firstTestPoint = true;
 
                 for (int k = 0; k < numPoints; k++) {
 
